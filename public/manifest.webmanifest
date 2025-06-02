@@ -1,0 +1,21 @@
+{
+  "name": "Vaiche Boa - Turnos",
+  "short_name": "Turnos VB",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4f46e5",
+  "description": "Consulta y gestiona tus turnos en Vaiche Boa.",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
