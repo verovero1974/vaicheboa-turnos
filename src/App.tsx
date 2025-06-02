@@ -3,13 +3,13 @@ import { Calendar, Clock, User, Settings, RefreshCw, Plus, Coffee } from 'lucide
 
 function App() {
   const user = {
-    name: "Jacobo",
-    role: "admin",
-    turnos: [
-      { fecha: "2025-06-07", entrada: "17:00", salida: "01:00" },
-      { fecha: "2025-06-08", entrada: "17:00", salida: "01:00" },
-    ],
-  };
+  name: "Verónica",
+  role: "empleado",
+  turnos: [
+    { fecha: "2025-06-14", entrada: "11:30", salida: "19:30" },
+    { fecha: "2025-06-16", entrada: "17:00", salida: "00:30" },
+  ],
+};
 
   const [showModal, setShowModal] = useState(false);
 
@@ -123,4 +123,3 @@ function App() {
   );
 }
 
-export default App;
