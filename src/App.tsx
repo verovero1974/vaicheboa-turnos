@@ -44,6 +44,7 @@ function App() {
             <span className="font-medium">{user.name}</span>
           </div>
         </header>
+<VaicheCard />
 
         {/* Welcome section */}
         <div className="bg-white rounded-xl shadow-md p-6 mb-6">
