@@ -35,7 +35,9 @@ function App() {
         {/* Welcome section */}
         <div className="bg-white rounded-xl shadow-md p-6 mb-6">
           <h2 className="text-xl font-semibold mb-4 text-gray-800">
-            Hola <span className="text-indigo-600">{user.name}</span> 👋
+          <h2 className="text-xl font-semibold mb-4 text-gray-800">
+  Hola <span className="text-indigo-600">Verónica</span> 👋
+</h2>
           </h2>
           <p className="text-gray-600 mb-2">Estos son tus turnos asignados esta semana:</p>
           
