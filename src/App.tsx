@@ -2,10 +2,23 @@ import React, { useState } from 'react';
 import { Calendar, Clock, User, Settings, RefreshCw, Plus, Coffee } from 'lucide-react';
 
 function App() {
-  <h2 className="text-xl font-semibold mb-4 text-gray-800">
-  Hola <span className="text-indigo-600">Verónica</span> 👋
-</h2>
   const [showModal, setShowModal] = useState(false);
+  const [user] = useState({
+    name: 'Verónica',
+    role: 'admin',
+    turnos: [
+      {
+        fecha: '2024-01-20',
+        entrada: '09:00',
+        salida: '17:00'
+      },
+      {
+        fecha: '2024-01-21',
+        entrada: '10:00',
+        salida: '18:00'
+      }
+    ]
+  });
 
   const formatDate = (dateStr: string) => {
     const date = new Date(dateStr);
@@ -27,17 +40,14 @@ function App() {
             <h1 className="text-3xl font-bold text-indigo-800">Vaiche Boa - Turnos</h1>
           </div>
           <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm">
-            
-            <span className="font-medium">Verónica</span>
+            <span className="font-medium">{user.name}</span>
           </div>
         </header>
 
         {/* Welcome section */}
         <div className="bg-white rounded-xl shadow-md p-6 mb-6">
           <h2 className="text-xl font-semibold mb-4 text-gray-800">
-          <h2 className="text-xl font-semibold mb-4 text-gray-800">
-  Hola <span className="text-indigo-600">Verónica</span> 👋
-</h2>
+            Hola <span className="text-indigo-600">{user.name}</span> 👋
           </h2>
           <p className="text-gray-600 mb-2">Estos son tus turnos asignados esta semana:</p>
           
