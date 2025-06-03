@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Calendar, Clock, User, Settings, RefreshCw, Plus, Coffee } from 'lucide-react';
-import VaicheCard from './VaicheCard';
+import VaicheCard from './VaicheboaCard';
+
 function App() {
   const [showModal, setShowModal] = useState(false);
   const [user] = useState({
@@ -128,5 +129,5 @@ function App() {
     </div>
   );
 }
-<VaicheCard />
+
 export default App;
