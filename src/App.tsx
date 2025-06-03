@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Calendar, Clock, User, Settings, RefreshCw, Plus, Coffee } from 'lucide-react';
-import VaicheCard from './components/VaicheCard';
+import VaicheCard from './VaicheboaCard';
 
 function App() {
   const [showModal, setShowModal] = useState(false);
