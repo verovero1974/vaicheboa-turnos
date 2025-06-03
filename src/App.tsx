@@ -128,5 +128,5 @@ function App() {
     </div>
   );
 }
-
+<VaicheCard />
 export default App;
