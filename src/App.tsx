@@ -2,15 +2,9 @@ import React, { useState } from 'react';
 import { Calendar, Clock, User, Settings, RefreshCw, Plus, Coffee } from 'lucide-react';
 
 function App() {
-  const user = {
-  name: "Verónica",
-  role: "empleado",
-  turnos: [
-    { fecha: "2025-06-14", entrada: "11:30", salida: "19:30" },
-    { fecha: "2025-06-16", entrada: "17:00", salida: "00:30" },
-  ],
-};
-
+  <h2 className="text-xl font-semibold mb-4 text-gray-800">
+  Hola <span className="text-indigo-600">Verónica</span> 👋
+</h2>
   const [showModal, setShowModal] = useState(false);
 
   const formatDate = (dateStr: string) => {
